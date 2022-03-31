@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+     .navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+
+.active {
+  background-color: #04AA6D;
+}
+.h1{
+    text-align:center;
+}
+.responsive{
+    width:100%;
+    max-width: 400px;
+    height: auto;
+    display:block;
+    margin:auto;
+    padding:10px;
+}
+
+.btn {
+    padding:5px;
+    color:#000;
+    background:#555;
+}
+
+.container{
+    text-align:center;
+}
+
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+
+.right {
+  text-align: right;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.bar-5 {width: 80%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 70%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 40%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 50%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 65%; height: 18px; background-color: #f44336;}
+
+.footer{
+    padding:40px 0;
+    background-color:rgb(255, 166, 57);
+}
+.footer .social{
+    text-align:center;
+    padding-bottom: 25px;
+    color:rgb(43, 7, 7);
+}
+
+.footer .social a{
+    font-size: 24px;
+    color:inherit;
+    border : 1px solid rgb(43, 7, 70);
+    width:40px;
+    height:40px;
+    line-height:38px;
+    display:inline-block;
+    text-align:center;
+    border-radius: 50%;
+    margin:0 8px;
+    opacity:0.75;
+}
+.footer .social a:hover{
+    opacity:0.9;
+}
+
+.footer ul{
+    margin-top:0;
+    padding:0;
+    list-style:none;
+    font-size:18px;
+    line-height: 1.6;
+    margin-bottom:0;
+    text-align:center;
+
+}
+
+.footer ul li a {
+    color:inherit;
+    text-decoration:none;
+    opacity: 0.8;
+}
+
+.footer ul li{
+    display:inline-block;
+    padding: 0 15px;
+
+
+}
+.footer ul li a:hover{
+    opacity:1;
+}
+.footer .copyright{
+    margin-top:15px;
+    text-align: center;
+    font-size:13px;
+    color:black;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  .side, .middle{
+      width: 100%;
+
+  }
+  .right{
+      display:none;
+  }
+} 
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-fw fa-address-card"></i> Portfolio</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+    <header class="container">
+        <h1 class="name"><b>Shubecha Dhakulkar</b></h1>
+        <p>Web Designer</p>
+        <img src="my.jpg" alt="girl" class="responsive">
+        <button class="btn">
+            <i class="fa fa-fw fa-download"></i>Download Resume
+        </button>
+    </header>
+
+    <h2 class="heading">About</h2>
+    <hr>
+    <p>Enthusiastic web designer ,love to design brand identities,mobile app UI &UX, design systems,websites and graphic design for advertising.</p>
+    <p>My favourite tools for design and prototyping are Adode XD, Figma, Webflow,illustator and Photoshop</p>
+
+    <h2 class="heading">My skills</h2>
+    <hr>
+    <div class="row">
+        <div class="side">
+          <div>Htmlstar</div>
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-5"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>70%</div>
+        </div>
+        <div class="side">
+          <div>CSSstar</div>
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-4"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>63%</div>
+        </div>
+        <div class="side">
+          <div>Javascript</div>
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-3"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>40%</div>
+        </div>
+        <div class="side">
+          <div>React</div>
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-2"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>30%</div>
+        </div>
+        <div class="side">
+          <div>Tailwind</div>
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-1"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>45%</div>
+        </div>
+      </div>
+      <h2>Contact Me</h2>
+      <hr>
+      <div class="row">
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="india">India</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Shubecha Dhakulkar @ 2022
+        </p>
+    </section>
+</body>
+</html>
